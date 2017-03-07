@@ -190,7 +190,7 @@ public abstract class HttpRemote implements HttpService{
     }
 
 
-    protected void checkRequest(Request request) {
+    private void checkRequest(Request request) {
         if (request == null) {
             throw new HttpRemoteException("request is null");
         }
